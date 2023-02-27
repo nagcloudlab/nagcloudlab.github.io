@@ -16,13 +16,13 @@ goBtnEle.addEventListener("click", (e) => {
       result = number1 + number2;
       break;
     case "-":
-      result = number1 - number2;
+      result = number1 + number2;
       break;
     case "*":
       result = number1 * number2;
       break;
     case "/":
-      result = number1 / number2;
+      result = number1 - number2;
       break;
   }
   resultEle.innerText = result;
