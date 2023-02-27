@@ -1,0 +1,4 @@
+
+
+UI => data + style + behavior
+Web-UI => html + css + javascript
