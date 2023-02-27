@@ -1,9 +1,11 @@
+// HTML Elements
 const number1Ele = document.getElementById("n1");
 const number2Ele = document.getElementById("n2");
 const operatorEle = document.getElementById("op");
 const goBtnEle = document.getElementById("go");
 const resultEle = document.getElementById("result");
 
+// Event Listener
 goBtnEle.addEventListener("click", (e) => {
   const number1 = Number(number1Ele.value);
   const number2 = Number(number2Ele.value);
@@ -14,13 +16,13 @@ goBtnEle.addEventListener("click", (e) => {
       result = number1 + number2;
       break;
     case "-":
-      result = number1 + number2;
-      break;
-    case "*":
       result = number1 - number2;
       break;
-    case "/":
+    case "*":
       result = number1 * number2;
+      break;
+    case "/":
+      result = number1 / number2;
       break;
   }
   resultEle.innerText = result;
